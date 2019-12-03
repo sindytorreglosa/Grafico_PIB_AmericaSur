@@ -5,17 +5,18 @@
 
 **Hola...*
 
+
 *A continuación, te comparto el código que empleé para crear el gráfico: Comportamiento del PIB per cápita, América del Sur, Periodo 2007 - 2017:
 
 ## Llamar librerías
 
-library(tidyverse)
-library(readr)
-library(ggplot2)
-library(gganimate)
+library(tidyverse)  
+library(readr)  
+library(ggplot2)  
+library(gganimate)  
 
 
-*Este gráfico se realizará con la malla **mismanaged_vs_gdp. 
+*Este gráfico se realizará con la malla **mismanaged_vs_gdp.   
 
 ## Descargar malla mismanaged_vs_gdp
 
@@ -24,10 +25,10 @@ mismanaged_vs_gdp <- readr::read_csv("https://raw.githubusercontent.com/rfordata
 
 Antes, voy a cambiar el nombre de algunas variables, para que sea más fácil su uso:
   + Total Population por PobTotal
-  + GDP per capita, PPP (constant 2011 international $) (aste) se cambia por PIB 
-
+  + GDP per capita, PPP (constant 2011 international $) (aste) se cambia por PIB    
+  
 names (mismanaged_vs_gdp)[6] = "PobTotal"
-names (mismanaged_vs_gdp)
+names (mismanaged_vs_gdp)  
 
 names (mismanaged_vs_gdp)[5] = "PIB"
 names (mismanaged_vs_gdp)
